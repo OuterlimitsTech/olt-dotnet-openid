@@ -3,7 +3,7 @@
 Provides a comprehensive list of OpenID Connect and JWT claim types as constants. This library includes registered claims from various sources such as OpenID Connect Core, RFC 7519, and other widely-used identity frameworks. 
 It simplifies the process of working with standard claims in .NET applications by offering a centralized and consistent set of claim type definitions.
 
-[![Nuget](https://img.shields.io/nuget/v/)](https://www.nuget.org/packages/OLT.Identity.ClaimTypeNames)
+[![Nuget](https://img.shields.io/nuget/v/OLT.Identity.ClaimTypeNames)](https://www.nuget.org/packages/OLT.Identity.ClaimTypeNames)
 [![CI](https://github.com/OuterlimitsTech/olt-dotnet-openid/actions/workflows/build.yml/badge.svg)](https://github.com/OuterlimitsTech/olt-dotnet-openid/actions/workflows/build.yml)
 
 ## Features
@@ -104,4 +104,4 @@ The `OpenIdClaimTypes` class provides a wide range of claim types, including but
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/OuterlimitsTech/olt-dotnet-openid/blob/baf08ac79e1b11246b5fa60db3baf12f58897af8/LICENSE) file for details.
