@@ -1,4 +1,4 @@
-﻿namespace OLT.OpenId
+﻿namespace OLT.Identity.Abstractions
 {
     /// <summary>
     /// List of registered claims from different sources
@@ -11,7 +11,7 @@
     /// <item><see href="https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/blob/23808d5c7b11c3e0e9f202e48129c054e2b4f7ab/src/Microsoft.IdentityModel.JsonWebTokens/JwtRegisteredClaimNames.cs"/></item>
     /// </list>
     /// </remarks>
-    public struct OpenIdClaimTypes
+    public struct ClaimTypeNames
     {
         /// <summary>
         /// Identity Provider (typically used for local built-in providers)

@@ -1,10 +1,10 @@
-# OLT.OpenId.ClaimTypeNames
+# OLT.Identity.ClaimTypeNames
 
 Provides a comprehensive list of OpenID Connect and JWT claim types as constants. This library includes registered claims from various sources such as OpenID Connect Core, RFC 7519, and other widely-used identity frameworks. 
 It simplifies the process of working with standard claims in .NET applications by offering a centralized and consistent set of claim type definitions.
 
 [![Nuget](https://img.shields.io/nuget/v/)](https://www.nuget.org/packages/)
-[![CI](https://github.com/OuterlimitsTech/olt-dotnet-utility-libraries/actions/workflows/build.yml/badge.svg)](https://github.com/OuterlimitsTech/olt-dotnet-utility-libraries/actions/workflows/build.yml)
+[![CI](https://github.com/OuterlimitsTech/olt-dotnet-openid/actions/workflows/build.yml/badge.svg)](https://github.com/OuterlimitsTech/olt-dotnet-openid/actions/workflows/build.yml)
 
 ## Features
 - Comprehensive list of OpenID Connect and JWT claim types.
@@ -16,31 +16,34 @@ It simplifies the process of working with standard claims in .NET applications b
 You can install the package via NuGet:
 
 ```
-dotnet add package OLT.OpenId.ClaimTypeNames
+dotnet add package OLT.Identity.ClaimTypeNames
 ```
 
 ## Usage
 
-Here's a basic example of how to use the `OpenIdClaimTypes` class:
+Here's a basic example of how to use the `ClaimTypeNames`:
 
 ```csharp
-using OLT;
+using OLT.Identity.Abstractions;
 
 class Program 
 { 
 	static void Main() 
 	{ 
-		Console.WriteLine($"Identity Provider Claim: {OpenIdClaimTypes.IdentityProvider}"); 
-		Console.WriteLine($"Email Claim: {OpenIdClaimTypes.Email}"); 
-		Console.WriteLine($"Audience Claim: {OpenIdClaimTypes.Audience}"); 
+		Console.WriteLine($"Identity Provider Claim: {ClaimTypeNames.IdentityProvider}"); 
+		Console.WriteLine($"Email Claim: {ClaimTypeNames.Email}"); 
+		Console.WriteLine($"Audience Claim: {ClaimTypeNames.Audience}"); 
 	} 
 }
 ```
 
 Within a Http Context
 ```csharp
+using OLT.Identity.Abstractions;
 
-var nameId = HttpContext?.User.Claims.FirstOrDefault(p => p.Type == OpenIdClaimTypes.NameId)?.Value;
+...
+
+var nameId = HttpContext?.User.Claims.FirstOrDefault(p => p.Type == ClaimTypeNames.NameId)?.Value;
 
 ```
 
