@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35506.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3D8BCC75-5194-4098-AA54-05378326781E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".workflow", ".workflow", "{97931E6A-FDC8-44A7-8FE3-9B009E20B433}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\build.yml = .github\workflows\build.yml
+		.github\workflows\release.yml = .github\workflows\release.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".config", ".config", "{5E55191F-3780-451E-A21D-73BE7E9D87D6}"
+	ProjectSection(SolutionItems) = preProject
+		.config\dotnet-tools.json = .config\dotnet-tools.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".solution", ".solution", "{FCEB6529-57ED-41BD-BCEB-AF8C0A021488}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".build", ".build", "{B672F1F0-10F6-4153-B5AC-80C4F3F000C9}"
+	ProjectSection(SolutionItems) = preProject
+		src\Directory.Build.props = src\Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OLT.Identity.ClaimTypeNames", "src\OLT.Identity.ClaimTypeNames\OLT.Identity.ClaimTypeNames.csproj", "{180C6A0F-AEDB-4F91-AA14-E2CAC5FC15AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{180C6A0F-AEDB-4F91-AA14-E2CAC5FC15AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{180C6A0F-AEDB-4F91-AA14-E2CAC5FC15AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{180C6A0F-AEDB-4F91-AA14-E2CAC5FC15AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{180C6A0F-AEDB-4F91-AA14-E2CAC5FC15AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B672F1F0-10F6-4153-B5AC-80C4F3F000C9} = {3D8BCC75-5194-4098-AA54-05378326781E}
+	EndGlobalSection
+EndGlobal
