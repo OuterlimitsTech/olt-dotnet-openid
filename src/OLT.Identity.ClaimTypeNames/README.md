@@ -104,4 +104,4 @@ The `OpenIdClaimTypes` class provides a wide range of claim types, including but
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/OuterlimitsTech/olt-dotnet-openid/blob/baf08ac79e1b11246b5fa60db3baf12f58897af8/LICENSE) file for details.
